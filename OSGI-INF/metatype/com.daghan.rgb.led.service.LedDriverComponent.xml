@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaData xmlns="http://www.osgi.org/xmlns/metatype/v1.2.0" localization="en_us">
+    <OCD id="com.daghan.rgb.led.service.LedDriverComponent"
+        name="ConfigurableExample"
+        description="This is a sample metatype file for a simple configurable component">
+		<Icon resource="/resources/icon-led128.png" size="32"/>
+        <AD id="disco.lights.param"
+            name="Disco Lights"
+            type="Boolean"
+            cardinality="0"
+            required="true"
+            default="true"
+            description="Set the status of the LED's"/>
+
+        <AD id="disco.lights.period.param"
+            name="Period"
+            type="Integer"
+            cardinality="0"
+            required="true"
+            default="1000"
+            min="100"
+            max="5000"
+            description="Set the Period of the switching lights"/>
+    </OCD>
+
+    <Designate pid="com.daghan.rgb.led.service.LedDriverComponent">
+        <Object ocdref="com.daghan.rgb.led.service.LedDriverComponent"/>
+    </Designate>
+</MetaData>

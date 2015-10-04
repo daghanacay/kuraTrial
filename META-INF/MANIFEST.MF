@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Led
+Bundle-SymbolicName: com.daghan.rgb.led
+Bundle-Version: 1.0.0
+Bundle-Vendor: DAGHAN
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Service-Component: OSGI-INF/component.xml
+Import-Package: jdk.dio;version="1.0.1",
+ jdk.dio.gpio;version="1.0.1",
+ org.eclipse.kura.configuration;version="1.0.0",
+ org.osgi.service.component;version="1.2.0",
+ org.slf4j;version="1.6.4"
+Bundle-ClassPath: .,
+ lib/jdk.dio_1.0.1.jar

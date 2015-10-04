@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" 
+	activate="startMeUp" 
+	configuration-policy="require" 
+	deactivate="shutMedown" 
+	enabled="true"
+	immediate="true" 
+	modified="updateMe" 
+	name="com.daghan.rgb.led.service.LedDriverComponent">
+   <implementation class="com.daghan.rgb.led.service.LedDriverComponent"/>
+
+   <property name="service.pid" type="String" value="com.daghan.rgb.led.service.LedDriverComponent"/>
+   <service>
+      <provide interface="com.daghan.rgb.led.service.LedDriverComponent"/>
+   </service>
+   
+   
+ </scr:component>
